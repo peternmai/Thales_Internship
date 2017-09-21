@@ -1,0 +1,8 @@
+# Object Files
+*.o
+*.ln
+*.sw*
+*~
+
+# MacOS Icon File
+.DS_Store
