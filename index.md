@@ -1,1 +1,5 @@
-<h1>Hello! Testing Github Pages</h1>
+---
+layout: default
+---
+
+# Hello!
