@@ -47,7 +47,7 @@ delivering JIRA tickets.
 
 #### Login and Authorization
 
-![Login](/demo/DeliveryTool/login.png?raw=true) ![Gerrit Authorization](/demo/DeliveryTool/setup1.png?raw=true)
+![Login](/demo/DeliveryTool/login.png) ![](/demo/DeliveryTool/setup1.png?raw=true)
 
 When a user first comes onto the delivery tool webpage, they are greeted with a
 login page. The page is authorized using their JIRA login credential. They would
@@ -62,7 +62,7 @@ repository under their name.
 
 #### Home Page
 
-![Home User Search](/demo/DeliveryTool/home1.png?raw=true) ![HomeUserTickets](/demo/DeliveryTool/home2.png?raw=true)
+![Home User Search](/demo/DeliveryTool/home1.png?raw=true) ![HomeUserTickets](https://github.com/peternmai/Thales_Internship/demo/DeliveryTool/home2.png?raw=true)
 
 Upon coming to the home screen, the user is greeted with a page that shows them all the
 JIRA tickets that are assigned to them. They can also search for tickets that are not
