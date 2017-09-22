@@ -1,4 +1,4 @@
-# Android Video Preview
+# Android Dynamic Video Preview
 
 Passenger aircraft nowadays are filled with digital contents that are constantly
 being swapped in and out. The goal of this project is to figure out a way to show
@@ -28,8 +28,8 @@ to perform any pre-processing on the media file prior to loading onto the aircra
 
 #### Demo
 
-Multi-Preview  | Single Preview + Remote Control
-:-------------:|:---------------------------------:
+Multi-Preview + Remote Control | Single Preview
+:-----------------------------:|:---------------:
 ![MultiPreview](/demo/VideoPreview/multi-preview.gif) | ![SinglePreview](/demo/VideoPreview/single-preview.gif)
 
 #### Preview System Backend Explanation
