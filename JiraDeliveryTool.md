@@ -47,7 +47,7 @@ delivering JIRA tickets.
 
 #### Login and Authorization
 
-![](/demo/DeliveryTool/login_gerrit.png)
+![LoginGerrit](/demo/DeliveryTool/login_gerrit.png)
 
 When a user first comes onto the delivery tool webpage, they are greeted with a
 login page. The page is authorized using their JIRA login credential. They would
