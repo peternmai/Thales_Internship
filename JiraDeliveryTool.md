@@ -63,7 +63,7 @@ repository under their name.
 
 #### Home Page
 
-![](/demo/DeliveryTool/home_combined.png)
+![HomePage](/demo/DeliveryTool/home_combined.png)
 
 Upon coming to the home screen, the user is greeted with a page that shows them all the
 JIRA tickets that are assigned to them. They can also search for tickets that are not
@@ -83,7 +83,7 @@ JIRA webpage.
 
 #### Selecting Tickets For Delivery
 
-![](/demo/DeliveryTool/build_combined.png)
+![BuildSelectPage](/demo/DeliveryTool/build_combined.png)
 
 When a user selects a ticket to delivery, they would have to choose which branch
 and build type they would like to deliver the ticket to. Upon selecting the
@@ -102,7 +102,7 @@ the ticket is is already in queue for delivery or have been delivered to SCM.
 
 #### Status Page
 
-![](/demo/DeliveryTool/status1.png)
+![StatusPage](/demo/DeliveryTool/status1.png)
 
 The status page is where the user can see a simplified version of the stages
 in which the ticket they have requested to deliver is located. Yellow indicates
