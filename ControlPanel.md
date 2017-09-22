@@ -3,7 +3,7 @@
 Passengers want easy accessibility to switches and toggles that controls their
 environment on an aircraft right from where they are sitting. What if we are
 able to do that using the tablet on each passenger's seat? Could we find an
-easy way to customize it for each airline's preference?
+easy way to customize it for each airline's preferences?
 
 * * *
 
@@ -17,10 +17,7 @@ easy way to customize it for each airline's preference?
 * **Programming Language**
   * Java
 * **Android API**
-  * Media Player
-  * Media Controller
-  * Media Metadata Retriever
-  * Media Session
+  * Remote View
   * Notification Builder
   * Service
 
