@@ -47,68 +47,68 @@ delivering JIRA tickets.
 
 #### Login and Authorization
 
-  ![](/demo/DeliveryTool/login_gerrit.png)
+![](/demo/DeliveryTool/login_gerrit.png)
 
-  When a user first comes onto the delivery tool webpage, they are greeted with a
-  login page. The page is authorized using their JIRA login credential. They would
-  also need to grant Gerrit permission in order for the tool to access the git
-  repository under their name.
+When a user first comes onto the delivery tool webpage, they are greeted with a
+login page. The page is authorized using their JIRA login credential. They would
+also need to grant Gerrit permission in order for the tool to access the git
+repository under their name.
 
-  * Benefits
-    * Show user tickets assigned to them
-    * Keep track of which ticket user has submitted
-    * Each user's git environment is sandbox
-    * Can submit to SCM under their name
+* Benefits
+  * Show user tickets assigned to them
+  * Keep track of which ticket user has submitted
+  * Each user's git environment is sandbox
+  * Can submit to SCM under their name
 
 
 #### Home Page
 
-  ![](/demo/DeliveryTool/home_combined.png)
+![](/demo/DeliveryTool/home_combined.png)
 
-  Upon coming to the home screen, the user is greeted with a page that shows them all the
-  JIRA tickets that are assigned to them. They can also search for tickets that are not
-  assigned to them for which they wish to deliver.
+Upon coming to the home screen, the user is greeted with a page that shows them all the
+JIRA tickets that are assigned to them. They can also search for tickets that are not
+assigned to them for which they wish to deliver.
 
-  Tickets here are designed to be minimalistic. It is color coded to show the stages
-  in which the ticket is currently in. Orange means the ticket still require
-  user to complete it. Green means ticket are ready to be delivered to SCM. Yellow
-  means ticket are passed the delivery stage and needs no further action. Here,
-  the user can only select the green tickets because those are the only one that
-  can be delivered.
+Tickets here are designed to be minimalistic. It is color coded to show the stages
+in which the ticket is currently in. Orange means the ticket still require
+user to complete it. Green means ticket are ready to be delivered to SCM. Yellow
+means ticket are passed the delivery stage and needs no further action. Here,
+the user can only select the green tickets because those are the only one that
+can be delivered.
 
-  When a user hovers over the ticket, they can see further information such as the
-  ticket's assignee, brief description, current stage, and link to that ticket's
-  JIRA webpage.
+When a user hovers over the ticket, they can see further information such as the
+ticket's assignee, brief description, current stage, and link to that ticket's
+JIRA webpage.
 
 
 #### Selecting Tickets For Delivery
 
-  ![](/demo/DeliveryTool/build_combined.png)
+![](/demo/DeliveryTool/build_combined.png)
 
-  When a user selects a ticket to delivery, they would have to choose which branch
-  and build type they would like to deliver the ticket to. Upon selecting the
-  available options from the dropdown menu, the user is shown a confirmation page
-  with their selected choices, and a proposed tag for the commit.
+When a user selects a ticket to delivery, they would have to choose which branch
+and build type they would like to deliver the ticket to. Upon selecting the
+available options from the dropdown menu, the user is shown a confirmation page
+with their selected choices, and a proposed tag for the commit.
 
-  The ticket the user have selected is automatically chosen. They are also shown
-  tickets that have been committed since the last tag and asked if they would like
-  to deliver those tickets as well.
+The ticket the user have selected is automatically chosen. They are also shown
+tickets that have been committed since the last tag and asked if they would like
+to deliver those tickets as well.
 
-  Upon submitting the delivery request, the tool will keep track that the ticket
-  is currently in queue for delivery by the current user. If a different user
-  search for the same ticket and try to deliver it, they will be notified that
-  the ticket is is already in queue for delivery or have been delivered to SCM.
+Upon submitting the delivery request, the tool will keep track that the ticket
+is currently in queue for delivery by the current user. If a different user
+search for the same ticket and try to deliver it, they will be notified that
+the ticket is is already in queue for delivery or have been delivered to SCM.
 
 
 #### Status Page
 
-  ![](/demo/DeliveryTool/status1.png)
+![](/demo/DeliveryTool/status1.png)
 
-  The status page is where the user can see a simplified version of the stages
-  in which the ticket they have requested to deliver is located. Yellow indicates
-  that the ticket is still in the process of being delivered. Green means the
-  ticket has successfully been delivered to SCM. Red indicate that the delivery
-  process has failed, as well as in which stage the failure happened.
+The status page is where the user can see a simplified version of the stages
+in which the ticket they have requested to deliver is located. Yellow indicates
+that the ticket is still in the process of being delivered. Green means the
+ticket has successfully been delivered to SCM. Red indicate that the delivery
+process has failed, as well as in which stage the failure happened.
 
-  The tool will also email the user a detailed log of the entire process upon
-  successfully or unsuccessfully delivering their selected tickets.
+The tool will also email the user a detailed log of the entire process upon
+successfully or unsuccessfully delivering their selected tickets.
