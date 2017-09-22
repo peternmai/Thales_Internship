@@ -1,4 +1,4 @@
-# Video Preview
+# Android Video Preview
 
 Passenger aircraft nowadays are filled with digital contents that are constantly
 being swapped in and out. The goal of this project is to figure out a way to show
@@ -12,6 +12,8 @@ to perform any pre-processing on the media file prior to loading onto the aircra
 * **Development Environment**
   * Ubuntu
   * Android
+* **Development Device**
+  * Pixel C
 * **Programming Language**
   * Java
 * **Android API**
@@ -49,25 +51,25 @@ with no lag time at all. This was great! For a two hour media content hosted loc
 preloading all the previews takes roughly one minute. However, for the same content
 hosted on a remote server, this could take up to three minutes. This would not suffice
 in a real world environment, and therefore, we had to come up with a different approach
-of tackling this scenario.
+for tackling this scenario.
 
 In our final version, we decided to only cache in 20 preview frames initially before
 allowing the user to play the video. Once the initial 20 frames are cached and the
 video is playing, the program will in the background fetch all of the remaining frames,
 filling them in a manner similar to divide and conquer. This means if the initial frames
 are 0, 20, 40, etc, the second round of fill in would do frame 10, 30, 50, etc, and
-the third round would fill in frame 5, 15, 25, 25, etc. When the user scrub, the
+the third round would fill in frame 5, 15, 25, 25, etc. When the user scrubs, the
 program will try to index directly into the preview array at that time using
 *floor(seekTime / totalTime)*. If this is a miss, it'll index into the nearest filled
 in frame index. This is also a constant time index because the program keeps track
-of how many spacing between frames are currently filled in. This makes the whole process
-of figuring out which preview frame to show for the current time a constant runtime
-operation for both a hit and a miss.
+of how many spacing are between frames that are currently filled in. This makes the
+whole process of figuring out which preview frame to show for the current seek time a
+constant runtime operation for both a hit and a miss.
 
 Using this method, the user would only have to wait a few seconds before the video
 starts. Then once it starts, they'll be able to scrub through the entire video,
-hardly noticing the difference between if the preview frames are still loading or
-fully populated.
+hardly noticing the difference between whether the preview frames are still
+loading or are already fully populated.
 
 #### Notification Media Controller
 
