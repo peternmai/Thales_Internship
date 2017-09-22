@@ -47,7 +47,8 @@ delivering JIRA tickets.
 
 #### Login and Authorization
 
-![Login](/demo/DeliveryTool/login.png) ![GerritAuthorization](/demo/DeliveryTool/setup1.png)
+<dd>
+![](/demo/DeliveryTool/login_gerrit.png)
 
 When a user first comes onto the delivery tool webpage, they are greeted with a
 login page. The page is authorized using their JIRA login credential. They would
@@ -59,11 +60,12 @@ repository under their name.
   * Keep track of which ticket user has submitted
   * Each user's git environment is sandbox
   * Can submit to SCM under their name
+</dd>
 
 #### Home Page
 
-![Home User Search](/demo/DeliveryTool/home1.png)
- ![HomeUserTickets](https://github.com/peternmai/Thales_Internship/demo/DeliveryTool/home2.png)
+<dd>
+![](/demo/DeliveryTool/home_combined.png)
 
 Upon coming to the home screen, the user is greeted with a page that shows them all the
 JIRA tickets that are assigned to them. They can also search for tickets that are not
@@ -79,10 +81,12 @@ can be delivered.
 When a user hovers over the ticket, they can see further information such as the
 ticket's assignee, brief description, current stage, and link to that ticket's
 JIRA webpage.
+</dd>
 
 #### Selecting Tickets For Delivery
 
-![PreBuildInformation](/demo/DeliveryTool/build1.png?raw=true) ![AssignedTicket](/demo/DeliveryTool/build2.png?raw=true)
+<dd>
+![](/demo/DeliveryTool/build_combined.png)
 
 When a user selects a ticket to delivery, they would have to choose which branch
 and build type they would like to deliver the ticket to. Upon selecting the
@@ -97,11 +101,12 @@ Upon submitting the delivery request, the tool will keep track that the ticket
 is currently in queue for delivery by the current user. If a different user
 search for the same ticket and try to deliver it, they will be notified that
 the ticket is is already in queue for delivery or have been delivered to SCM.
-
+</dd>
 
 #### Status Page
 
-![StatusPage](/demo/DeliveryTool/status1.png?raw=true)
+<dd>
+![](/demo/DeliveryTool/status1.png)
 
 The status page is where the user can see a simplified version of the stages
 in which the ticket they have requested to deliver is located. Yellow indicates
@@ -111,3 +116,4 @@ process has failed, as well as in which stage the failure happened.
 
 The tool will also email the user a detailed log of the entire process upon
 successfully or unsuccessfully delivering their selected tickets.
+</dd>
