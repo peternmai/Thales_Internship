@@ -40,6 +40,9 @@ delivering JIRA tickets.
   * JavaScript
 * **Database**
   * PostgreSQL
+* **Development Environment**
+  * Ubuntu
+  * Atom Editor
 
 * * *
 
